@@ -1,0 +1,43 @@
+.header{
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+.header-menu{
+  color: var(--white);
+  display: flex;
+  gap: 2.5rem;
+  font: var(--button);
+  padding-block: 1.8rem;
+}
+
+.header-login{
+  font: var(--button);
+  background: var(--white);
+  color: var(--black);
+  border: none;
+  padding-inline: 1rem;
+  padding-block: .3rem;
+  border-radius: .5rem;
+}
+
+@media screen and (max-width:1000px){
+  .header-menu,
+  .header-login{
+    display: none;
+  }
+  .header{
+    justify-content:space-between;
+    padding-inline: 1.25rem;
+    padding-block: 1.5rem;
+  }
+  .mobile-menu{
+    display: block;
+  }
+}
