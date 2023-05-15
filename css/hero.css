@@ -36,10 +36,13 @@
   max-inline-size: 17rem;
   margin-block-start: 1.5rem;
   border-radius: .5rem;
+
+  cursor: pointer;
 }
 
 .hero-content span:nth-of-type(2){
   text-decoration: underline;
+  cursor: pointer;
 }
 
 @media screen and (max-width:1000px){
